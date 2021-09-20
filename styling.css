@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  padding-bottom: 50px;
 }
 
 .shippingHeader { 
@@ -54,11 +55,11 @@ body {
 
 }
 
-#mainHeaderActions {
+.mainHeaderActions {
+  margin-right: 3rem;
   position: relative;
   left: 34%;
   display: flex;
-  float: right;
   align-items: center; /* align vertical */
 }
 
@@ -154,4 +155,41 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.collectionsTitleBox span {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+  border-bottom-width: thin;
+  font-size: 2.3rem;
+}
+
+.collectionsOuterBox {
+  padding-left: 5rem;
+}
+
+.collectionsBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.collectionsTitle {
+  margin-top: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  transform: rotate(-90deg);
+  border-bottom: 1px solid grey;
+}
+
+.collectionsChoiceBox p {
+  margin-left: 5rem;
+  padding-right: 2rem;
+  padding-left: 5rem;
+  border-bottom: grey solid 1px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
 }
