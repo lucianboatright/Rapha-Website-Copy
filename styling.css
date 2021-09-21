@@ -214,12 +214,14 @@ Next Section
   padding-left: 5rem;
   padding-top: 5rem;
   border-bottom: grey 1px solid;
+  /* height: 100%; */
 }
 
 .collectionsBox {
   padding-right: 1rem;
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .collectionsTitle {
@@ -326,3 +328,12 @@ Next Section
   color: #f67599;
   cursor: pointer;
 }
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.midContent {
+
+}
+
