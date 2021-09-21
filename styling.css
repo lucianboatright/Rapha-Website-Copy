@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30rem;
 }
 
 .shippingHeader { 
@@ -164,16 +164,26 @@ body {
   border-bottom: 1px solid grey;
 }
 
+.collectionsTitleBox {
+  flex: 1;
+  border-bottom: 1px solid grey;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
 .collectionsTitleBox span {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid grey;
-  border-bottom-width: thin;
   font-size: 2.3rem;
 }
 
 .collectionsOuterBox {
+  display: grid;
+  grid: 10rem / auto auto auto auto;
   padding-left: 5rem;
+  padding-top: 5rem;
 }
 
 .collectionsBox {
@@ -182,19 +192,59 @@ body {
 }
 
 .collectionsTitle {
-  margin-top: 3rem;
-  padding-top: 5rem;
+  margin-top: 20rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
+  margin-right: 1rem;
+  transform-origin: 0 0;
   transform: rotate(-90deg);
   border-bottom: 1px solid grey;
+  flex: 1;
+  text-align: right;
 }
 
 .collectionsChoiceBox p {
-  margin-left: 5rem;
+  margin-left: 1rem;
   padding-right: 2rem;
-  padding-left: 5rem;
+  padding-left: 1rem;
   border-bottom: grey solid 1px;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  width: 10rem;
+}
 
+.collectionsMainImage {
+  width: 5rem;
+}
+
+.collectionsSaleBox {
+  padding-left: 35rem;
+}
+
+.collectionsStars {
+  padding-top: 2rem;
+  padding-left: 10rem;
+}
+
+.collectionsDiscription {
+  margin-top: 2rem;
+}
+
+.collectionsMiniImages {
+  padding-left: 5rem;
+  margin-right: 1rem;
+}
+
+.collectionsMiniImages img {
+  height: 40px;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-right: 1px solid grey;
+}
+
+.collectionsMiniImages img:last-child {
+  height: 40px;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-right: 0;
 }
