@@ -217,6 +217,8 @@ Next Section
   /* height: 50rem; */
   height: 100%;
   padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .collectionsBox {
@@ -398,6 +400,7 @@ Next Section
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  margin: 1rem;
 }
 
 .signUpBox {
@@ -450,10 +453,13 @@ Next Section
 }
 
 .signUpSelectionTickBox {
-  color: black;
+  display: flex; 
+  justify-content: space-around;
+  align-content: center;
+  padding: 
+  0.5rem;
 }
 .signUpSelectionTickBox:focus {
-  color: #f67599;
 }
 
 .signUpSelectionTick {
@@ -466,11 +472,13 @@ Next Section
 }
 
 .rightTick {
+  display: flex;
   justify-content: right;
 }
 
 .signUpBoxbutton div {
   border: 1px solid white;
+  margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 1rem;
@@ -481,3 +489,33 @@ Next Section
   color: white;
   font-weight: bold;
 }
+
+.signUpUnderText {
+  padding-top: 1rem;
+  /* text-align: center; */
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid grey;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.contactAndLinksBox {
+  padding-top: 2rem;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid grey;
+}
+
+.contactAndLinksText {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
