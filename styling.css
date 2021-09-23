@@ -401,37 +401,40 @@ Next Section
 }
 
 .signUpBox {
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.signUpBox div {
+  padding-right: 2rem;
+  padding-right: 2rem;
 }
 
-.signUpBoxItemEmail input {
-  border-radius: 1px solid white;
-  border-radius: 5px;
-  width: 15rem;
-  padding: 1rem;
+.signUpBoxItemEmailInput {
+  border: 1px solid grey;
+  width: 90%;
+  padding: 0.5rem;
 }
-.signUpBoxItemEmail input:hover {
+.signUpBoxItemEmailInput:focus {
   transition: 0.5s;
   border: 1px solid #f67599;
+  outline: white;
+}
+.signUpBoxItemEmailInput:hover {
+  outline: none;
 }
 
 .signUpBoxItem select {
- width: 15rem;
+ width: 100%;
  background: white;
  color: black;
  padding: 0.5rem;
- border-radius: 5px;
  border: 1px solid grey;
 
 }
-.signUpBoxItem select:hover {
- /* width: 20rem;
- background: white;
- color: black;
- padding: 0.5rem;
- border-radius: 5px; */
+.signUpBoxItem select:focus {
  border: 1px solid #f67599;
 
 }
@@ -444,4 +447,37 @@ Next Section
 
 .signUpBoxSelections option:not(:checked) {
   background: white;
+}
+
+.signUpSelectionTickBox {
+  color: black;
+}
+.signUpSelectionTickBox:focus {
+  color: #f67599;
+}
+
+.signUpSelectionTick {
+  border-radius: 1px solid black;
+  padding: 1rem;
+}
+.signUpSelectionTick:focus {
+  color: #f67599;
+  border-radius: 1px solid #f67599;
+}
+
+.rightTick {
+  justify-content: right;
+}
+
+.signUpBoxbutton div {
+  border: 1px solid white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
 }
