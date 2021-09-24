@@ -511,6 +511,7 @@ Next Section
   margin-right: 1rem;
   display: grid;
   grid-template-columns: auto auto;
+  width: 94%;
 }
 
 .contactAndLinksBox div {
@@ -524,7 +525,8 @@ Next Section
   margin-right: 1rem;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 19rem;
+  /* grid-gap: 19rem; */
+  width: 110%;
 }
 
 .contactAndLinksText div {
@@ -534,4 +536,47 @@ Next Section
   color: #f67599;
 }
 
+/* #######################################################
+Next Section
+####################################################### */
 
+.socialMediaBox {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.socialMediaBox div {
+  border-bottom: 1px solid grey;
+  margin: 1rem;
+}
+
+.followSection img {
+  padding-right: 2rem;
+  height: 1.5rem;
+}
+.followSection {
+  margin-left: 1rem;
+}
+.socialMediaLinks {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+}
+.socialMediaLinks img {
+  height: 1.5rem;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.bottomPageRights {
+  margin: 2rem;
+  /* padding: 2rem; */
+  padding-top: 2rem;
+  border-top: 1px solid grey;
+}
