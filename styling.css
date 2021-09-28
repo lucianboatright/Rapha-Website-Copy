@@ -407,7 +407,44 @@ Next Section
   padding-top: 1rem;
   padding-bottom: 2rem;
   width: 55rem;
+  line-height: 1.5;
+}
 
+/* #######################################################
+Next Section
+####################################################### */
+
+.garunteeBox {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  margin: 2rem;
+  padding-top: 2rem;
+}
+
+.garunteeItems {
+  padding-top: 2rem;
+  text-align: center;
+  border-right: 1px solid grey;
+  flex-flow: row wrap;
+  flex-direction: row;
+  position: relative;
+  padding-right: 3rem;
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  justify-content: center;
+}
+.garunteeItems:last-child {
+  padding-top: 2rem;
+  text-align: center;
+  border-right: 1px solid white;
+  line-height: 1.5;
+  justify-content: center;
+}
+.garunteeItems img {
+ height: 6rem;
 }
 
 /* #######################################################
