@@ -394,6 +394,26 @@ Next Section
 Next Section
 ####################################################### */
 
+.assistanceTitle {
+  border-top: 1px solid grey;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.assistanceContent {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 55rem;
+
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
 .signUpHeader {
   border-top: solid 1px grey;
   padding-top: 2rem;
@@ -568,6 +588,10 @@ Next Section
 }
 .socialMediaLinks img {
   height: 1.5rem;
+
+}
+.ukFlagSection {
+ padding-bottom: 1rem;
 }
 
 /* #######################################################
