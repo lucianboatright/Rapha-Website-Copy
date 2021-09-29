@@ -42,7 +42,6 @@ Next Section
   padding-left: 2rem;
   display: grid;
   grid: 3rem / auto auto auto;
-  grid-gap: 15rem;
   cursor: default;
   justify-content:space-between; 
 }
@@ -53,6 +52,7 @@ Next Section
   padding-right: 1.5rem;
   cursor: pointer;
   font-weight: bold;
+  height: 2rem;
 }
 
 .mainHeaderTabsBox span:hover {
