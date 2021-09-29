@@ -551,7 +551,7 @@ Next Section
 
 .signUpUnderText {
   padding-top: 1rem;
-  /* text-align: center; */
+  text-align: center;
   font-size: 0.9rem;
   display: flex;
   justify-content: center;
