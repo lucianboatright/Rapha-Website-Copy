@@ -1,7 +1,18 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/RaphaSansCondensed-Semibold.woff2);
+  font-weight: bold;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/RaphaSerifText-Roman.woff2);
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: myFirstFont;
 }
 
 .shippingHeader { 
@@ -27,34 +38,27 @@ Next Section
 ####################################################### */
 
 .mainHeader {
-  padding-top: 2rem;
-  padding-left: 3rem;
-  display:grid;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: grid;
   grid: 3rem / auto auto auto;
   grid-gap: 15rem;
   cursor: default;
+  justify-content:space-between; 
 }
 
 .mainHeaderTabsBox span {
   justify-content: start;
   padding-top: 5px;
-  padding-right: 2rem;
+  padding-right: 1.5rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .mainHeaderTabsBox span:hover {
   color: #f67599;
 
 }
-
-/* #mainHeaderTabs {
-  padding-right: 15px;
-  cursor: pointer;
-} */
-/* #mainHeaderTabs:hover{
-  color: #f67599;
-  cursor: pointer;
-} */
 
 /* #######################################################
 Next Section
@@ -201,6 +205,7 @@ Next Section
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 2.3rem;
+  font-weight: bold;
 }
 
 /* #######################################################
@@ -245,9 +250,9 @@ Next Section
   border-right: 1px solid rgba(0,0,0,.15);
 }
 
-/* .collectionsTitleHeader {
-  height: 30rem;
-} */
+.collectionsTitleHeader {
+  font-weight: bold;
+}
 
 .collectionsChoiceBoxItem {
   font-weight: bold;
@@ -304,6 +309,16 @@ Next Section
 .collectionsDiscription {
   margin-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.collectionsDiscriptionTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.collectionsDiscriptionCost {
+  font-size: 0.8rem;
 }
 
 .collectionsMiniImages {
@@ -372,6 +387,9 @@ Next Section
 .midContentBox {
   padding: 3rem;
   border-right: 1px solid rgba(0,0,0,.15);
+}
+.midContentBox span {
+  font-weight: bold;
 }
 .midContentBox:last-child {
   padding: 3rem;
@@ -470,9 +488,11 @@ Next Section
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .signUpBox div {
   padding-right: 2rem;
   padding-right: 2rem;
+  font-weight: bold;
 }
 
 .signUpBoxItemEmailInput {
@@ -501,9 +521,21 @@ Next Section
  border: 1px solid #f67599;
 
 }
-/* .signUpBoxItem {
 
-} */
+.signUpBoxItemEmailInput {
+ margin-top: 0.5rem;
+}
+
+.signUpBoxSelections {
+  margin-top: 0.5rem;
+}
+
+.signUpBoxItem span {
+  margin-bottom: 0.5rem;
+  /* padding-left: 1rem; */
+  /* margin-top: 0.5rem; */
+}
+
 .signUpBoxButton {
   text-align: center;
 }
@@ -512,28 +544,111 @@ Next Section
   background: white;
 }
 
-.signUpSelectionTickBox {
-  display: flex; 
-  justify-content: space-around;
-  align-content: center;
-  padding: 0.5rem;
-}
-.signUpSelectionTickBox:focus {
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.signUpSelectionTick {
-  border-radius: 1px solid black;
-  padding: 1rem;
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+  border: 1px solid #f67599;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ######################################## */
+.signUpSelectionTickBox {
+  display: flex; 
+  align-content: center;
+  padding-top: 0.5rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.signUpSelectionTickBox label {
+  padding-right: 1rem;
+}
+.signUpSelectionTickBox label:focus {
+  color: #f67599;
+}
+.signUpSelectionTickBox label:hover {
+  color: #f67599;
+}
+
+/* .signUpSelectionTick {
+  border-radius: 1px solid black;
+  padding: 2rem;
+}
+
+.signUpSelectionTick input {
+  padding-right: 1rem;
+}
+
 .signUpSelectionTick:focus {
   color: #f67599;
   border-radius: 1px solid #f67599;
-}
-
-.rightTick {
+} */
+/* ################################## */
+/* .rightTick {
   display: flex;
   justify-content: right;
-}
+} */
 
 .signUpBoxbutton div {
   border: 1px solid white;
@@ -552,7 +667,7 @@ Next Section
 .signUpUnderText {
   padding-top: 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
@@ -585,6 +700,10 @@ Next Section
 
 .pushright {
   margin-left: 0.7rem;
+  cursor: pointer;
+}
+.pushright div:hover {
+  color: #f67599;
 }
 
 .pushright div {
@@ -592,14 +711,16 @@ Next Section
 }
 
 .contactAndLinksTextBox {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   margin-right: 2rem;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  font-size: 0.7rem;
 }
 
 .contactAndLinksText div {
   padding: 0.4rem;
+  cursor: pointer;
 }
 .contactAndLinksText div:hover {
   color: #f67599;
@@ -627,6 +748,7 @@ Next Section
 }
 .followSection {
   margin-left: 1rem;
+  cursor: pointer;
 }
 .socialMediaLinks {
   margin-left: 1rem;
@@ -647,6 +769,11 @@ Next Section
 }
 .ukFlagSection span {
   vertical-align: super;
+  cursor: pointer;
+}
+
+.ukFlagSection span:hover {
+  color: #f67599;
 }
 
 /* #######################################################

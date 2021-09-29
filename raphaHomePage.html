@@ -47,7 +47,7 @@
       <div class="collectionsOuterBox">
         <div class="collectionsBox">
           <div class="collectionsTitle">
-            <span class="collectionsTitleHeader">HILIGHTS</span>
+            <span class="collectionsTitleHeader">HIGHLIGHTS</span>
           </div>
           <div class="collectionsBorder"><span></span></div>
           <div class="collectionsChoiceBox">
@@ -70,8 +70,8 @@
               <img alt="stars" width="15rem" src="images/icons/starIcon.png" />
             </div>
             <div class="collectionsDiscription">
-              <center><div>WOMENS PRO TEAM LONG SLEEVE TRAINING JERSEY</div></center>
-              <center><div>£95.00</div></center>
+              <center><div class="collectionsDiscriptionTitle">WOMENS PRO TEAM LONG SLEEVE TRAINING JERSEY</div></center>
+              <center><div class="collectionsDiscriptionCost">£95.00</div></center>
             </div>
             <center><div class="collectionsMiniImages">
               <img alt="top" src="images/contentImages/proTopMiniImage.jpg" />
@@ -164,22 +164,30 @@
       </div>
       <div class="signUpBox">
         <div class="signUpBoxItemEmail">
-          <div>EMAIL ADDRESS</div>
+          <span>EMAIL ADDRESS</span>
           <input class="signUpBoxItemEmailInput" type="text" >
         </div>
         <div class="signUpBoxItem">
-          <div>END ME EMAILS ABOUT</div>
-          <select calss="signUpBoxSelections">
+          <span>END ME EMAILS ABOUT</span>
+          <select class="signUpBoxSelections">
             <option val="">Men</option>
             <option val="1">Women</option>
           </select>
         </div>
         <div class="signUpBoxItem">
-          <div>RIDING STYLE</div>
+          <span>RIDING STYLE</span>
           <div>
             <span class="signUpSelectionTickBox">
-              <input type="checkbox" class="signUpSelectionTick leftTick"> Riding & Gravel Riding</input>
-              <input type="checkbox" class="signUpSelectionTick rightTick">Mountain Biking</input>
+              <label class="container">Riding & Gravel Riding
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Mountain Biking
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <!-- <input type="checkbox" class="signUpSelectionTick"> Riding & Gravel Riding</input> -->
+              <!-- <input type="checkbox" class="signUpSelectionTick">Mountain Biking</input> -->
             </span>
           </div>
         </div>
