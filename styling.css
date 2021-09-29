@@ -398,6 +398,8 @@ Next Section
   border-top: 1px solid grey;
   padding-top: 3rem;
   font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   text-align: center;
   font-weight: bold;
 }
@@ -562,13 +564,23 @@ Next Section
 Next Section
 ####################################################### */
 
-.contactAndLinksBox {
-  padding-top: 1rem;
+/* .contactAndLinksContainer {
   margin-left: 1rem;
   margin-right: 1rem;
+} */
+
+.contactAndLinksOuter {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contactAndLinksBox {
+  padding-top: 1rem;
+  /* margin-left: 1rem; */
+  margin-right: 1rem;
   display: grid;
-  grid-template-columns: auto auto;
-  width: 94%;
+  grid-template-columns: 50% 50%;
+  width: 100%;
 }
 
 .contactAndLinksBox div {
@@ -576,14 +588,25 @@ Next Section
   margin: 1rem;
 }
 
+.contactAndLinksText {
+  
+}
+
+.pushright {
+  margin-left: 0.7rem;
+}
+
+.pushright div {
+  padding: 0.4rem;
+}
+
 .contactAndLinksTextBox {
-  padding-left: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /* padding-left: 1.5rem; */
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  /* padding-right: 2rem; */
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  /* grid-gap: 19rem; */
-  width: 110%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 .contactAndLinksText div {
@@ -602,7 +625,7 @@ Next Section
   margin-left: 1rem;
   margin-right: 1rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
 }
 .socialMediaBox div {
   border-bottom: 1px solid grey;
@@ -620,15 +643,21 @@ Next Section
   margin-left: 1rem;
   margin-right: 1rem;
   display: grid;
-  grid-template-columns: auto auto;
-  width: 90%;
+  grid-template-columns: 50% 50%;
 }
+/* .socialMediaLinks:last-child {
+  margin-left: 2rem;
+} */
 .socialMediaLinks img {
   height: 1.5rem;
 
 }
 .ukFlagSection {
  padding-bottom: 1rem;
+ margin-left: 0.7rem;
+}
+.ukFlagSection span {
+  vertical-align: super;
 }
 
 /* #######################################################
