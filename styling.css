@@ -182,7 +182,7 @@ Next Section
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(0,0,0,.15);
 }
 
 /* #######################################################
@@ -191,7 +191,7 @@ Next Section
 
 .collectionsTitleBox {
   flex: 1;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(0,0,0,.15);
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 3rem;
@@ -213,7 +213,7 @@ Next Section
   /* grid: 10rem / auto auto auto auto auto auto; */
   padding-left: 5rem;
   padding-top: 5rem;
-  border-bottom: grey 1px solid;
+  border-bottom: rgba(0,0,0,.15) 1px solid;
   /* height: 50rem; */
   height: 100%;
   padding-bottom: 1rem;
@@ -236,14 +236,14 @@ Next Section
   transform-origin: 0 0;
   transform: rotate(-90deg);
   font-size: 1.5rem;
-  /* border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid rgba(0,0,0,.15);
   flex: 1; */
   /* text-align: right; */
 }
 
 .collectionsBorder {
   height: 100%;
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0,0,0,.15);
 }
 
 /* .collectionsTitleHeader {
@@ -260,14 +260,14 @@ Next Section
 
 /* .collectionsChoiceBox p {
   display: flex;
-  border-bottom: grey solid 1px;
+  border-bottom: rgba(0,0,0,.15) solid 1px;
   width: 100%;
   height: 100%;
   text-align: center;
 } */
 .collectionsChoiceBox p {
   display: flex;
-  border-bottom: grey solid 1px;
+  border-bottom: rgba(0,0,0,.15) solid 1px;
   padding: 33%;
   text-align: center;
 }
@@ -322,7 +322,7 @@ Next Section
   height: 40px;
   padding: 1rem;
   padding-top: 2rem;
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0,0,0,.15);
 }
 
 .collectionsMiniImages img:last-child {
@@ -334,7 +334,7 @@ Next Section
 
 .collectionsButton {
   margin-bottom: 2rem;
-  border: 2px solid grey;
+  border: 2px solid rgba(0,0,0,.15);
   text-align: center;
   width: 6rem;
   padding: 0.5rem;
@@ -379,7 +379,7 @@ Next Section
 }
 .midContentBox {
   padding: 3rem;
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0,0,0,.15);
 }
 .midContentBox:last-child {
   padding: 3rem;
@@ -395,7 +395,7 @@ Next Section
 ####################################################### */
 
 .assistanceTitle {
-  border-top: 1px solid grey;
+  border-top: 1px solid rgba(0,0,0,.15);
   padding-top: 3rem;
   font-size: 2rem;
   margin-left: 2rem;
@@ -420,15 +420,23 @@ Next Section
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: space-between;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgba(0,0,0,.15);
   margin: 2rem;
   padding-top: 2rem;
+}
+
+.garunteeItems:hover p {
+ color: #f67599;
+ cursor: pointer;
+}
+.garunteeItems p {
+  font-weight: bold;
 }
 
 .garunteeItems {
   padding-top: 2rem;
   text-align: center;
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0,0,0,.15);
   flex-flow: row wrap;
   flex-direction: row;
   position: relative;
@@ -454,7 +462,7 @@ Next Section
 ####################################################### */
 
 .signUpHeader {
-  border-top: solid 1px grey;
+  border-top: solid 1px rgba(0,0,0,.15);
   padding-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -476,7 +484,7 @@ Next Section
 }
 
 .signUpBoxItemEmailInput {
-  border: 1px solid grey;
+  border: 1px solid rgba(0,0,0,.15);
   width: 90%;
   padding: 0.5rem;
 }
@@ -494,7 +502,7 @@ Next Section
  background: white;
  color: black;
  padding: 0.5rem;
- border: 1px solid grey;
+ border: 1px solid rgba(0,0,0,.15);
 
 }
 .signUpBoxItem select:focus {
@@ -556,18 +564,13 @@ Next Section
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(0,0,0,.15);
   margin: 2rem;
 }
 
 /* #######################################################
 Next Section
 ####################################################### */
-
-/* .contactAndLinksContainer {
-  margin-left: 1rem;
-  margin-right: 1rem;
-} */
 
 .contactAndLinksOuter {
   margin-left: 1rem;
@@ -584,12 +587,8 @@ Next Section
 }
 
 .contactAndLinksBox div {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(0,0,0,.15);
   margin: 1rem;
-}
-
-.contactAndLinksText {
-  
 }
 
 .pushright {
@@ -601,10 +600,8 @@ Next Section
 }
 
 .contactAndLinksTextBox {
-  /* padding-left: 1.5rem; */
   margin-left: 1.5rem;
   margin-right: 2rem;
-  /* padding-right: 2rem; */
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
@@ -628,7 +625,7 @@ Next Section
   grid-template-columns: 50% 50%;
 }
 .socialMediaBox div {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(0,0,0,.15);
   margin: 1rem;
 }
 
@@ -668,5 +665,5 @@ Next Section
   margin: 2rem;
   /* padding: 2rem; */
   padding-top: 2rem;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgba(0,0,0,.15);
 }
