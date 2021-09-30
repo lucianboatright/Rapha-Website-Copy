@@ -1,0 +1,788 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/RaphaSansCondensed-Semibold.woff2);
+  font-weight: bold;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/RaphaSerifText-Roman.woff2);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+
+.shippingHeader { 
+  height: 36px; 
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  color:WHITE;
+  font-size:10px;
+  font-weight: bold;
+}
+
+/* #shippingText {
+  color:WHITE;
+  font-size:10px;
+  font-weight: bold;
+} */
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.mainHeader {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: grid;
+  grid: 3rem / auto auto auto;
+  cursor: default;
+  justify-content:space-between; 
+}
+
+.mainHeaderTabsBox span {
+  justify-content: start;
+  padding-top: 5px;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  height: 2rem;
+}
+
+.mainHeaderTabsBox span:hover {
+  color: #f67599;
+
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.headerLogoBox {
+  padding-left: 5rem;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.headerLogo {
+  margin-right: 10rem;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.mainHeaderActions {
+  margin-right: 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+.magGlass {
+  cursor: pointer;
+  height: 20px;
+  margin-right: 15px;
+  width: 20px;
+  background-size: 20px;
+  background-image: url('./images/icons/magGlass.png');
+}
+.magGlass:hover {
+  background-image: url('./images/icons/magGlassPink.png');
+}
+
+.user {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  background-size: 20px;
+  background-image: url('./images/icons/user.png');
+}
+.user:hover {
+  background-image: url('./images/icons/userPink.png');
+}
+.basket {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  background-size: 20px;
+  background-image: url('./images/icons/basket.png');
+}
+.basket:hover {
+  background-image: url('./images/icons/basketPink.png');
+}
+
+#spacer {
+  padding-left: 20px;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.pageTitle {
+  /* display: flex;
+  justify-content: center; */
+  padding-top: 60px;
+}
+
+#mainTitle {
+  font-size: 5rem;
+  /* font-size: 6.2rem; */
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+#mainTitleSlogan {
+  font-size: 1.8rem;
+  /* font-size: 2.2rem; */
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+#mainTitleLinks {
+  font-size: 0.9rem;
+  /* font-size: 1.2rem; */
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#mainTitleLinkRight {
+  cursor: pointer;
+}
+#mainTitleLinkLeft {
+  cursor: pointer;
+}
+#mainTitleLinkRight:hover {
+  color: #f67599;
+}
+#mainTitleLinkLeft:hover {
+  color: #f67599;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.titleContentImages {
+  display: flex;
+  padding-top: 30px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* width: 100px;
+  padding: 10px;
+  justify-content: center; */
+}
+.titleContentImagePair {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.collectionsTitleBox {
+  flex: 1;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+}
+
+.collectionsTitleBox span {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.collectionsOuterBox {
+  display: grid;
+  /* grid: 10rem / auto auto auto auto auto auto; */
+  /* padding-left: 2rem; */
+  padding-top: 2rem;
+  border-bottom: rgba(0,0,0,.15) 1px solid;
+  /* height: 50rem; */
+  height: 100%;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.collectionsBox {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.collectionsTitle {
+  width: 6%;
+  margin-top: 7rem;
+  padding-bottom: 3rem;
+  margin-right: 2rem;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  font-size: 1.5rem;
+  /* border-bottom: 1px solid rgba(0,0,0,.15);
+  flex: 1; */
+  /* text-align: right; */
+}
+
+.collectionsBorder {
+  height: 100%;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+
+.collectionsTitleHeader {
+  font-weight: bold;
+}
+
+.collectionsChoiceBoxItem {
+  font-weight: bold;
+}
+
+.collectionsChoiceBox {
+  width: 22%;
+  /* height: 33%; */
+  display: grid;
+  grid-template-columns: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.collectionsChoiceBox p {
+  border-bottom: rgba(0,0,0,.15) solid 1px;
+  padding: 33%;
+  text-align: center;
+
+}
+.collectionsChoiceBox p:last-child {
+  padding: 33%;
+  border-bottom: white solid 1px;
+  text-align: center;
+}
+
+.collectionsMainImage {
+  padding-right: 2rem;
+}
+
+.collectionsMainImage img {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.collectionsSaleBox {
+  width: 60%;
+  padding-left: 1rem;
+}
+
+.collectionsSalesTitleImage {
+  height: auto;
+  width: 60%;
+  padding-top: 4rem;
+}
+
+.collectionsStars {
+  padding-top: 1rem;
+  /* padding-left: 10rem; */
+  text-align: center;
+}
+
+.collectionsDiscription {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.collectionsDiscriptionTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.collectionsDiscriptionCost {
+  font-size: 0.8rem;
+}
+
+.collectionsMiniImages {
+}
+
+.collectionsMiniImages img {
+  height: 40px;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+
+.collectionsMiniImages img:last-child {
+  height: 40px;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-right: 0;
+}
+
+.collectionsButton {
+  margin-bottom: 2rem;
+  border: 2px solid rgba(0,0,0,.15);
+  text-align: center;
+  width: 6rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.collectionsButton:hover {
+  transition: 0.25s;
+  border: 2px solid #f67599;
+  text-align: center;
+  width: 6rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: #f67599;
+  cursor: pointer;
+}
+
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.midContentContainer {
+  display: grid;
+  padding: 1rem;
+  margin: 1rem;
+  /* grid-column-gap: 1rem; */
+  grid-template-columns: auto auto auto;
+}
+.midContentContainer p {
+  font-size: 1.5rem;
+}
+.midContentContainer span {
+  font-size: 2rem;
+}
+.midContentContainer img {
+  float: left;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 50vw;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.midContentBox {
+  padding: 3rem;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+.midContentBox span {
+  font-weight: bold;
+}
+.midContentBox:last-child {
+  padding: 3rem;
+  border-right: 1px solid white;
+}
+
+.midContentImageBox img {
+  object-fit: cover;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.assistanceTitle {
+  border-top: 1px solid rgba(0,0,0,.15);
+  padding-top: 3rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.assistanceContent {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 55rem;
+  line-height: 1.5;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.garunteeBox {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0,0,0,.15);
+  margin: 2rem;
+  padding-top: 2rem;
+}
+
+.garunteeItems:hover p {
+ color: #f67599;
+ cursor: pointer;
+}
+.garunteeItems p {
+  font-weight: bold;
+}
+
+.garunteeItems {
+  padding-top: 2rem;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,.15);
+  flex-flow: row wrap;
+  flex-direction: row;
+  position: relative;
+  padding-right: 3rem;
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  justify-content: center;
+}
+.garunteeItems:last-child {
+  padding-top: 2rem;
+  text-align: center;
+  border-right: 1px solid white;
+  line-height: 1.5;
+  justify-content: center;
+}
+.garunteeItems img {
+ height: 6rem;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.signUpHeader {
+  border-top: solid 1px rgba(0,0,0,.15);
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.signUpBox {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.signUpBox div {
+  padding-right: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.signUpBoxItemEmailInput {
+  border: 1px solid rgba(0,0,0,.15);
+  width: 90%;
+  padding: 0.5rem;
+}
+.signUpBoxItemEmailInput:focus {
+  transition: 0.5s;
+  border: 1px solid #f67599;
+  outline: white;
+}
+.signUpBoxItemEmailInput:hover {
+  outline: none;
+}
+
+.signUpBoxItem select {
+ width: 100%;
+ background: white;
+ color: black;
+ padding: 0.5rem;
+ border: 1px solid rgba(0,0,0,.15);
+
+}
+.signUpBoxItem select:focus {
+ border: 1px solid #f67599;
+
+}
+
+.signUpBoxItemEmailInput {
+ margin-top: 0.5rem;
+}
+
+.signUpBoxSelections {
+  margin-top: 0.5rem;
+}
+
+.signUpBoxItem span {
+  margin-bottom: 0.5rem;
+  /* padding-left: 1rem; */
+  /* margin-top: 0.5rem; */
+}
+
+.signUpBoxButton {
+  text-align: center;
+}
+
+.signUpBoxSelections option:not(:checked) {
+  background: white;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+  border: 1px solid #f67599;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ######################################## */
+.signUpSelectionTickBox {
+  display: flex; 
+  align-content: center;
+  padding-top: 0.5rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.signUpSelectionTickBox label {
+  padding-right: 1rem;
+}
+.signUpSelectionTickBox label:focus {
+  color: #f67599;
+}
+.signUpSelectionTickBox label:hover {
+  color: #f67599;
+}
+
+/* .signUpSelectionTick {
+  border-radius: 1px solid black;
+  padding: 2rem;
+}
+
+.signUpSelectionTick input {
+  padding-right: 1rem;
+}
+
+.signUpSelectionTick:focus {
+  color: #f67599;
+  border-radius: 1px solid #f67599;
+} */
+/* ################################## */
+/* .rightTick {
+  display: flex;
+  justify-content: right;
+} */
+
+.signUpBoxbutton div {
+  border: 1px solid white;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+}
+
+.signUpUnderText {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  margin: 2rem;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.contactAndLinksOuter {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contactAndLinksBox {
+  padding-top: 1rem;
+  /* margin-left: 1rem; */
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+.contactAndLinksBox div {
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  margin: 1rem;
+}
+
+.pushright {
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+.pushright div:hover {
+  color: #f67599;
+}
+
+.pushright div {
+  padding: 0.4rem;
+}
+
+.contactAndLinksTextBox {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-size: 0.7rem;
+}
+
+.contactAndLinksText div {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.contactAndLinksText div:hover {
+  color: #f67599;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.socialMediaBox {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.socialMediaBox div {
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  margin: 1rem;
+}
+
+.followSection img {
+  padding-right: 2rem;
+  height: 1.5rem;
+}
+.followSection {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.socialMediaLinks {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/* .socialMediaLinks:last-child {
+  margin-left: 2rem;
+} */
+.socialMediaLinks img {
+  height: 1.5rem;
+
+}
+.ukFlagSection {
+ padding-bottom: 1rem;
+ margin-left: 0.7rem;
+}
+.ukFlagSection span {
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.ukFlagSection span:hover {
+  color: #f67599;
+}
+
+/* #######################################################
+Next Section
+####################################################### */
+
+.bottomPageRights {
+  margin: 2rem;
+  /* padding: 2rem; */
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,.15);
+}
